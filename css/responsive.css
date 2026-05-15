@@ -1,0 +1,28 @@
+/* ============================================================
+   css/responsive.css
+   Breakpoints and mobile overrides.
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .hero-wrap                    { grid-template-columns: 1fr; }
+  .photo-card                   { display: none; }
+  .about-grid, .contact-grid    { grid-template-columns: 1fr; gap: 2.5rem; }
+  .nav-links                    { display: none; }
+  #hamburger                    { display: block; }
+}
+
+@media (max-width: 600px) {
+  section                       { padding: 4rem 1.25rem; }
+  .proj-grid                    { grid-template-columns: 1fr; }
+  .skills-wrap                  { grid-template-columns: 1fr; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:  0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  #cursor, #cursor-ring { display: none; }
+  body                  { cursor: auto; }
+}

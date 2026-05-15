@@ -1,0 +1,139 @@
+/* ============================================================
+   css/layout.css
+   Section wrappers, grid systems, hero layout.
+   ============================================================ */
+
+/* ── Shared section defaults ──────────────────────────────── */
+section {
+  padding:  5rem 2rem;
+  position: relative;
+  z-index:  1;
+}
+
+.container {
+  max-width: 1100px;
+  margin:    0 auto;
+}
+
+/* ── Section header helpers ───────────────────────────────── */
+.section-tag {
+  font-family:    var(--mono);
+  font-size:      0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color:          var(--orange);
+  margin-bottom:  0.75rem;
+  display:        flex;
+  align-items:    center;
+  gap:            0.5rem;
+}
+.section-tag::before { content: "—"; opacity: 0.4; }
+
+.section-h2 {
+  font-family:    var(--sans);
+  font-size:      clamp(1.8rem, 4vw, 2.8rem);
+  font-weight:    800;
+  letter-spacing: -0.03em;
+  line-height:    1.1;
+  margin-bottom:  3rem;
+}
+
+/* ── 3D canvas background ─────────────────────────────────── */
+#three-canvas {
+  position:       fixed;
+  top:            0;
+  left:           0;
+  width:          100%;
+  height:         100%;
+  pointer-events: none;
+  z-index:        0;
+  opacity:        0.6;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+#hero {
+  min-height: 100vh;
+  display:    flex;
+  align-items: center;
+  padding:    7rem 2rem 4rem;
+  position:   relative;
+  overflow:   hidden;
+}
+
+.hero-wrap {
+  max-width:             1100px;
+  margin:                0 auto;
+  width:                 100%;
+  display:               grid;
+  grid-template-columns: 1fr auto;
+  gap:                   4rem;
+  align-items:           center;
+  position:              relative;
+  z-index:               2;
+}
+
+/* ── About ────────────────────────────────────────────────── */
+#about { background: var(--bg2); }
+
+.about-grid {
+  display:               grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap:                   4rem;
+  align-items:           start;
+}
+
+/* ── Stats ────────────────────────────────────────────────── */
+.stats-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   1px;
+  background:            var(--border);
+}
+
+/* ── Skills ───────────────────────────────────────────────── */
+#skills { background: var(--bg); }
+
+.skills-wrap {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:                   1.5rem;
+}
+
+/* ── Projects ─────────────────────────────────────────────── */
+#projects { background: var(--bg2); }
+
+.proj-grid {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap:                   1.5rem;
+}
+
+/* ── Terminal ─────────────────────────────────────────────── */
+#terminal-section { background: var(--bg); }
+
+.terminal-wrap { max-width: 700px; margin: 0 auto; }
+
+/* ── Contact ──────────────────────────────────────────────── */
+#contact { background: var(--bg2); }
+
+.contact-grid {
+  display:               grid;
+  grid-template-columns: 1fr 1fr;
+  gap:                   4rem;
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+footer {
+  padding:        1.75rem 2rem;
+  border-top:     1px solid var(--border);
+  display:        flex;
+  align-items:    center;
+  justify-content: space-between;
+  flex-wrap:      wrap;
+  gap:            1rem;
+  position:       relative;
+  z-index:        1;
+}
+
+.fc            { font-family: var(--mono); font-size: 0.7rem; color: var(--dim); }
+.fc span       { color: var(--orange); }

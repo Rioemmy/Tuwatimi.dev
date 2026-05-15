@@ -1,0 +1,46 @@
+/* ============================================================
+   css/base.css
+   Reset, global defaults, scrollbar, selection.
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:   var(--bg);
+  color:        var(--text);
+  font-family:  var(--sans);
+  overflow-x:   hidden;
+  cursor:       none;
+}
+
+::selection {
+  background: var(--orange);
+  color: #fff;
+}
+
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-thumb { background: var(--orange); }
+
+/* Skip-to-content (accessibility) */
+.skip-to-main {
+  position:    fixed;
+  top:         -200%;
+  left:        1rem;
+  z-index:     200;
+  background:  var(--orange);
+  color:       #fff;
+  padding:     0.5rem 1rem;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size:   0.8rem;
+  text-decoration: none;
+}
+.skip-to-main:focus { top: 1rem; }
