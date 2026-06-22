@@ -1,8 +1,8 @@
-/* ============================================================
+/* 
    js/scroll-reveal.js
    IntersectionObserver that fires .visible on elements as they
    enter the viewport. Also triggers skill-bar animations.
-   ============================================================ */
+*/
 
 const revealObserver = new IntersectionObserver(
   entries => {

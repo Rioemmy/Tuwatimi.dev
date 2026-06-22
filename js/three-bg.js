@@ -1,9 +1,9 @@
-/* ============================================================
+/* 
    js/three-bg.js
    Three.js animated 3D floating shapes background.
    Requires three.js loaded before this script.
    Respects prefers-reduced-motion.
-   ============================================================ */
+*/
 
 (function setup3D() {
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;

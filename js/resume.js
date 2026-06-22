@@ -1,8 +1,8 @@
-/* ============================================================
+/* 
    js/resume.js
    Generates a plain-text resume and triggers a download.
    Resume content lives in js/data.js (resumeContent).
-   ============================================================ */
+*/
 
 document.getElementById("resume-download-btn").addEventListener("click", () => {
   const blob = new Blob([resumeContent], { type: "text/plain" });

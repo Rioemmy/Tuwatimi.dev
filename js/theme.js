@@ -1,7 +1,7 @@
-/* ============================================================
+/* 
    js/theme.js
    Light / dark mode toggle.
-   ============================================================ */
+*/
 
 let isDark = true;
 const themeBtn = document.getElementById("theme-btn");

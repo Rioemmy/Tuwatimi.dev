@@ -1,9 +1,9 @@
-/* ============================================================
+/*
    js/projects.js
    Renders project cards into #proj-grid, wires filter buttons,
    and manages the project detail modal.
    Depends on: js/data.js (projects array)
-   ============================================================ */
+*/
 
 // ── Card rendering ──────────────────────────────────────────
 

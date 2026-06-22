@@ -1,8 +1,8 @@
-/* ============================================================
+/* 
    js/terminal.js
    Interactive CLI terminal widget.
    Depends on: js/data.js (projects array)
-   ============================================================ */
+ */
 
 const termOutput = document.getElementById("term-output");
 const termInput  = document.getElementById("term-input");
